@@ -2,6 +2,7 @@
 /**
  * Section Header Control for the Customizer
  *
+ * @version 1.0.0
  * @package WordPress
  * @subpackage Customizer
  */
