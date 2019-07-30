@@ -1,6 +1,6 @@
 # WordPress Customizer Controls
 
-A collection of Cuatomizer controls that you can use with your WordPress theme or plugin.
+A collection of Customizer controls that you can use with your WordPress theme or plugin.
 
 - Multiple Select
 - Textarea
