@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				fontWeights[index].remove(i);
 			}
 
-			weightsArray = weights.split(',');
+			weightsArray = weights.split(';');
 			weightsArray.forEach(weight => {
 				var option = new Option(weightNames[weight], weight);
 				fontWeights[index].add(option, undefined);
@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
 				JSON.stringify(
 					{
 						'family': fontFamilies[index].value,
-						'weight': fontWeights[index].value
+						'weight': fontWeights[index].value.replace('0,', '').replace('1,', ''),
+						'style': fontWeights[index].value.includes('1,') ? 'italic' : 'normal'
 					}
 				)
 			);
@@ -46,10 +47,12 @@ document.addEventListener('DOMContentLoaded', function() {
 				JSON.stringify(
 					{
 						'family': fontFamilies[index].value,
-						'weight': fontWeights[index].value
+						'weight': fontWeights[index].value.replace('0,', '').replace('1,', ''),
+						'style': fontWeights[index].value.includes('1,') ? 'italic' : 'normal'
 					}
 				)
 			);
+			
 			if ("createEvent" in document) {
     			var evt = document.createEvent("HTMLEvents");
     			evt.initEvent("change", false, true);

@@ -15,6 +15,14 @@ if ( class_exists( 'WP_Customize_Control' ) && ! class_exists( 'FT_Textarea_Cont
 	 * @extends WP_Customize_Control
 	 */
 	class FT_Textarea_Control extends WP_Customize_Control {
+
+		/**
+		 * Control Type
+		 *
+		 * @var string
+		 */
+		public $type = 'ft-textarea';
+
 		/**
 		 * Render the control's content
 		 */
@@ -25,6 +33,9 @@ if ( class_exists( 'WP_Customize_Control' ) && ! class_exists( 'FT_Textarea_Cont
 				<textarea class="large-text" cols="20" rows="5" <?php $this->link(); ?>>
 					<?php echo esc_textarea( $this->value() ); ?>
 				</textarea>
+				<?php if ( ! empty( $this->description ) ) : ?>
+				<span class="description customize-control-description"><?php echo $this->description; ?></span>
+				<?php endif; ?>
 			</label>
 			<?php
 		}
