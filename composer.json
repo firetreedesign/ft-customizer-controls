@@ -1,0 +1,23 @@
+{
+    "name": "firetreedesign/ft-customizer-controls",
+    "description": "WordPress Customizer controls.",
+    "license": "GPL-2.0-only",
+    "homepage": "https://firetreedesign.com/",
+    "authors": [
+        {
+            "name": "Daniel Milner",
+            "email": "daniel@firetreedesign.com",
+            "homepage": "https://firetreedesign.com/",
+            "role": "Developer"
+        },
+    ],
+    "support": {
+        "source": "https://github.com/firetreedesign/ft-customizer-controls",
+        "issues": "https://github.com/firetreedesign/ft-customizer-controls/issues",
+        "docs": "https://github.com/firetreedesign/ft-customizer-controls",
+        "email": "support@firetreedesign.com"
+    },
+    "require": {
+        "php": ">=5.3"
+    },
+}
