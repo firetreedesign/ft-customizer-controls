@@ -5,3 +5,6 @@ A collection of Customizer controls that you can use with your WordPress theme o
 - Multiple Select
 - Textarea
 - Section Header
+- Range Value
+- Google Fonts
+- Google Fonts Selector
